@@ -3,7 +3,4 @@ class PagesController < ApplicationController
 
   def home
   end
-
-  def a_propos
-  end
 end

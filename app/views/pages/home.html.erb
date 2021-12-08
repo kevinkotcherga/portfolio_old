@@ -1,16 +1,10 @@
 <div class="content">
-          <h2>Bienvenue</h2>
-            <p>Je suis un développeur web utilisant ruby on rails, javascript, html, css et php. N'hésitez pas à jeter un œil à mes derniers projets dans la section portfolio.</p>
+  <h2>Bienvenue</h2>
+  <p>Je suis un développeur web utilisant ruby on rails, javascript, html, css et php. N'hésitez pas à jeter un œil à mes derniers projets dans la section portfolio.</p>
 
-            <a href="views/portfolio.php">Portfolio</a>
+  <a href="views/portfolio.php">Portfolio</a>
+</div>
 
-            <% if cookies[:theme] == "light" %>
-              <%= link_to "go dark", root_path(theme: "dark") %>
-            <% else %>
-              <%= link_to "go light", root_path(theme: "light") %>
-            <% end %>
-        </div>
-
-        <div class="imgBx">
-          <%= image_tag ("Saly-38.png") %>
+<div class="imgBx">
+  <%= image_tag ("Saly-38.png") %>
 </div>
