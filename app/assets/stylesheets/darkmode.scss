@@ -1,0 +1,17 @@
+@mixin dark {
+  body {
+    background-color: #000 !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  [data-color-mode="dark"] {
+    @include dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-color-mode="auto"], [data-color-mode="dark"] {
+    @include dark;
+  }
+}
