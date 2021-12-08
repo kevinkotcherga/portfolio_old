@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'profile', to: 'pages#profile'
   get 'competences', to: 'pages#competences'
   get 'experiences', to: 'pages#experiences'
+  get 'portfolio', to: 'pages#portfolio'
+  get 'contact', to: 'pages#contact'
 end
