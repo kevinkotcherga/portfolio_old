@@ -24,12 +24,10 @@ $color1: #385A94;
 $size-font: 1.1rem;
 
 body.light {
-  color: black;
-  background-color: white;
+  color: --link;
 }
 body.dark {
-  color: white;
-  background-color: black;
+  color: #fefefe;
 }
 
 * {
@@ -51,7 +49,7 @@ body.dark {
   --background-body: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   --text-color: var(--link);
   --background:#fefefe;
-  --background-button:#fefefe;
+  --background-button:#fefefe80;
   --background-color:#F7DAF3;
   --background-card-profil: rgba(255, 255, 255, 0.267);
   --background-container: rgba(255,255,255,0.4);

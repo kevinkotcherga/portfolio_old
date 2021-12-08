@@ -2,5 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'a_propos', to: 'pages#a_propos'
+  get 'profile', to: 'pages#profile'
+  get 'competences', to: 'pages#competences'
+  get 'experiences', to: 'pages#experiences'
 end
