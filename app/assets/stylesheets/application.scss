@@ -23,13 +23,22 @@ $background : #D3E2FA;
 $color1: #385A94;
 $size-font: 1.1rem;
 
+body.light {
+  color: black;
+  background-color: white;
+}
+body.dark {
+  color: white;
+  background-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;}
 
-body {
+.light {
 
   // VARIABLES
 
