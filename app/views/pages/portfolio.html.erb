@@ -1,6 +1,7 @@
 <div class="container-card__portfolio">
   <div class="card__portfolio">
     <div class="content-card__portfolio">
+      <%= link_to "Profile", auto_text_path %>
       <a href="../portfolio-projects/project1-auto-text/index.html">
         <%= image_tag ("project1-auto-text.jpg"), class: "img-portfolio" %>
             <figcaption>Auto text</figcaption>
@@ -88,7 +89,7 @@
 
 </div>
 
-<script type="text/javascript" src="../vanilla-tilt.js"></script>
+<%# <script type="text/javascript" src="../vanilla-tilt.js"></script>
 <script>
   VanillaTilt.init(document.querySelectorAll(".card__portfolio"),{
   max: 20,
@@ -96,7 +97,7 @@
   glare: true,
   "max-glare": 1,
   });
-</script>
+</script> %>
 
 <!-- MOVING IMAGES -->
 

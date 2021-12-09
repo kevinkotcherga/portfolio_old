@@ -18,3 +18,9 @@ require("channels")
 
 import "controllers"
 import "bootstrap"
+import {toggleTheme} from "components/toggle_theme"
+
+
+document.addEventListener("turbolinks:load", () => {
+  toggleTheme();
+});
