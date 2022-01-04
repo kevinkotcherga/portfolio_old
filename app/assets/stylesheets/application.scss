@@ -12,9 +12,6 @@
 @import "components/mixins.scss";
 @import "components/index";
 @import "pages/index";
-@import "darkmode";
-
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 $hover-color: rgb(32, 47, 68);
 $hover-color2: rgb(84, 97, 117);
@@ -30,9 +27,21 @@ $size-font: 1.1rem;
   font-family: 'Varela Round', sans-serif;
 }
 
-body {
+#bloc_page, .container {
+  position: relative;
+  max-width: 1350px;
+  margin: 0 auto;
+}
 
-  // VARIABLES
+body {
+  color: var(--link);
+  background: var(--background-body);
+  overflow: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+    // VARIABLES BODY
 
   --link: #385A94;
   --color-nav: #385A94;
@@ -53,15 +62,6 @@ body {
   --box-shadow2: 0 15px 35px rgba(0,0,0,0.1);
   --box-shadow3: 0 10px 10px rgba(0,0,0,0.1);
   --border: 1px solid #F7DAF3;
-
-  // CODE BODY
-
-  color: var(--link);
-  background: var(--background-body);
-  overflow: hidden;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .dark {
@@ -89,16 +89,6 @@ body {
   --border: 1px solid #fefefe;
 }
 
-#bloc_page, .container {
-  position: relative;
-  max-width: 1350px;
-  margin: 0 auto;
-}
-
-// PAGE 1 - HOME PAGE
-
-// MAIN CONTAINER GLASSMORPHISM
-
 section {
   background: var(--background-body);
   display: flex;
@@ -122,258 +112,6 @@ section {
   align-items: center;
   padding: 50px;
   transition: 0.5s;
-}
-
-// HEADER GLASSMORPHISM
-
-.header {
-  position: absolute;
-  top: -40px;
-  right: 20px;
-  left: 20px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--background-container);
-  box-shadow: var(--box-shadow);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
-  .header__titre-principale {
-    display: flex;
-    align-items: baseline;
-    h1 {
-      font-size: 1.6rem;
-      margin: 0 12px 0 0;
-      padding: 0;
-    }
-    span {
-      margin-right: 12px;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-right: 10px;
-      margin: 0;
-      padding: 0;
-    }
-  }
-}
-
-// NAV
-
-.nav__ul {
-  margin-left: 50px;
-  user-select: none;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  li {
-    margin: 0px 3px;
-    border-radius: 12px;
-    color: var(--color-nav);
-    &:hover, &.active {
-      background: var(--background);
-      box-shadow: 0 4px 7px rgba(0,0,0,0.1);
-      }
-    a {
-    .active, :hover {
-      color: var(--color-nav);
-      }
-    }
-  }
-  a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--link);
-    font-weight: 500;
-    display: inline-block;
-    position: relative;
-    padding: 8px 13px;
-  }
-}
-
-  // CONTENT GLASSMORPHISM
-
-.content {
-  transform: translateX(-100px);
-  max-width: 700px;
-  box-shadow: var(--box-shadow2);
-  background: var(--background-content);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
-  padding: 40px;
-  padding-left: 110px;
-  h2 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  a {
-    display: inline-block;
-    color: var(--color-nav);
-    padding: 15px 30px;
-    background: var(--background);
-    margin-top: 20px;
-    border-radius: 20px;
-    font-size: 1.2em;
-    font-weight: 500;
-    text-decoration: none;
-    box-shadow: inset 2px 2px 6px #bababa,
-                inset -2px -2px 2px #ffffff;
-  }
-  a:hover {
-    box-shadow: inset 5px 5px 6px #bababa,
-                inset -2px -2px 2px #ffffff;
-  }
-}
-
-// ROBOT IMAGE HOME PAGE
-
-.imgBx img {
-  z-index: auto;
-  overflow: hidden;
-  max-width: 350px;
-  margin-right: 150px;
-  animation: anim 8s ease-in-out infinite;
-}
-
-@keyframes anim {
-  0%, 100%
-  {
-    transform: translateY(90px);
-  }
-  50%
-  {
-    transform: translateY(110px);
-  }
-}
-
-// SIDE NAV BAR
-
-.nav-bar {
-  z-index: 1;
-  position: absolute;
-  right: -25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .nav-bar__logos {
-    width: 70px;
-    fill: var(--fill-nav-bar);
-    transform: scale(0.6);
-    transition: 0.5s;
-  }
-  li {
-    list-style-type: none;
-  }
-  a {
-    border: 1px solid rgba(120, 120, 120, 0.2);
-    border-top: 1px solid rgba(82, 82, 82, 0.2);
-    border-left: 1px solid rgba(82, 82, 82, 0.2);
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    background: var(--background-button);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40%;
-    margin: 10px 0;
-    box-shadow: var(--box-shadow3);
-  }
-}
-
-.nav-bar li:hover a .nav-bar__logos {
-  transform: scale(0.6) rotate(360deg);
-}
-
-// FOOTER HOME PAGE
-
-.copyrightText {
-  font-size: 1rem;
-  position: absolute;
-  bottom: 20px;
-  right: 50px;
-}
-
-.darkmode {
-  position: absolute;
-  bottom: 20px;
-  left: 50px;
-}
-
-// TOGGLE DARK MODE
-
-.switch {
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 40px;
-  cursor: pointer;
-  bottom: 20px;
-  right: 20px;
-}
-.switch input {
-  display: none;
-}
-.slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: var(--border);
-  border-radius: 16px;
-  box-shadow: var(--box-shadow-darkmode);
-}
-
-.slider:before {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  z-index: 999;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  box-shadow: var(--box-shadow-btn-darkmode);
-  background-color: var(--background-color);
-  content: "";
-  transition: 0.5s;
-}
-.off {
-  position: absolute;
-  top: 11px;
-  right: 12px;
-  color: #3d3935;
-}
-.on {
-  position: absolute;
-  top: 11px;
-  left: 12px;
-  color: #000000;
-}
-
-.svg_on {
-  fill: var(--link);
-  width: 25px;
-}
-
-.svg_off {
-  fill: var(--link);
-  width: 25px;
-}
-
-input:checked + .slider:before {
-  transform: translateX(33px);
 }
 
 // PAGE 2 - "A PROPOS" :
