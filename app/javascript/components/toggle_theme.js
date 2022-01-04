@@ -19,6 +19,7 @@ const toggleTheme = () => {
   if (localStorage.toggled === 'dark') {
     // on applique la class au body
     body.classList.add('dark');
+    checkbox.checked = true;
   }
 
   // on écoute le click sur la checkbox

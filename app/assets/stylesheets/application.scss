@@ -177,7 +177,11 @@ section {
     &:hover, &.active {
       background: var(--background);
       box-shadow: 0 4px 7px rgba(0,0,0,0.1);
-      color: blue;
+      }
+    a {
+    .active, :hover {
+      color: var(--color-nav);
+      }
     }
   }
   a {
@@ -188,9 +192,14 @@ section {
     display: inline-block;
     position: relative;
     padding: 8px 13px;
-    &:hover, &.active {
-      color: var(--color-nav);
+    &.active {
+      color: blue;
     }
+  }
+
+   a:hover, .active {
+
+    color: blue;
   }
 }
 
