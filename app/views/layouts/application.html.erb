@@ -14,7 +14,7 @@
 
   <body id="<%= controller.controller_name %>-<%= controller.action_name %>">
 
-    <section>
+    <section >
       <div class="container">
 
         <header class="header">
@@ -58,5 +58,14 @@
         <%= yield %>
 
     </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".container"),{
+        max: 0.3,
+        speed: 3000,
+        glare: false,
+        reverse: false,
+        });
+      </script>
   </body>
 </html>

@@ -19,7 +19,7 @@ require("channels")
 import "controllers"
 import "bootstrap"
 import {toggleTheme} from "components/toggle_theme"
-
+import VanillaTilt from 'vanilla-tilt';
 
 document.addEventListener("turbolinks:load", () => {
   toggleTheme();

@@ -1,4 +1,5 @@
 <div class="container-card__portfolio">
+
   <div class="card__portfolio">
     <div class="content-card__portfolio">
       <a href="../portfolio-projects/project1-auto-text/index.html">
@@ -88,16 +89,6 @@
 
 </div>
 
-<%# <script type="text/javascript" src="../vanilla-tilt.js"></script>
-<script>
-  VanillaTilt.init(document.querySelectorAll(".card__portfolio"),{
-  max: 20,
-  speed: 1000,
-  glare: true,
-  "max-glare": 1,
-  });
-</script> %>
-
 <!-- MOVING IMAGES -->
 
   <div class="imgDoodle8">
@@ -108,3 +99,13 @@
     <%= image_tag ("object9.png") %>
   </div>
 </div>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card__portfolio"),{
+  max: 15,
+  speed: 1000,
+  glare: false,
+  "max-glare": 1,
+  });
+</script>
