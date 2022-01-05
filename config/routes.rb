@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   get 'experiences', to: 'pages#experiences'
   get 'portfolio', to: 'pages#portfolio'
   get 'contact', to: 'pages#contact'
-  get 'auto_text', to: 'project#auto_text'
+
+  get 'front_end', to: 'projects#front_end'
+  get 'full_stack', to: 'projects#full_stack'
 end

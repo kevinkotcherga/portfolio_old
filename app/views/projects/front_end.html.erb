@@ -1,0 +1,111 @@
+<div class="container-card__portfolio">
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project1-auto-text/index.html">
+        <%= image_tag ("project1-auto-text.jpg"), class: "img-portfolio" %>
+            <figcaption>Auto text</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project2-popup/index.html">
+        <figure>
+          <%= image_tag ("project2-popup.jpg"), class: "img-portfolio" %>
+            <figcaption>Pop-up</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a class="lien-projet-javascript" href="../portfolio-projects/project3-btnmenu/index.html">
+        <figure>
+          <%= image_tag ("project3-btnmenu.jpg"), class: "img-portfolio" %>
+            <figcaption>Menu latéral</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project4-notification/index.html">
+        <figure>
+          <%= image_tag ("project4-notification.jpg"), class: "img-portfolio" %>
+            <figcaption>Notifications</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project5-darkmode/index.html">
+        <figure>
+          <%= image_tag ("project5-darkmode.jpg"), class: "img-portfolio" %>
+            <figcaption>Dark mode</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project7-quiz/index.html">
+        <figure>
+          <%= image_tag ("project7-quiz.jpg"), class: "img-portfolio" %>
+            <figcaption>Quiz</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project8-zoom/index.html">
+        <figure>
+        <%= image_tag ("project8-zoom.jpg"), class: "img-portfolio" %>
+            <figcaption>Zoom</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project9-marquee-effect/index.html">
+        <figure>
+          <%= image_tag ("project9-mode.jpg"), class: "img-portfolio" %>
+            <figcaption>Site mode</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<!-- MOVING IMAGES -->
+
+  <div class="imgDoodle8">
+    <%= image_tag ("object8.png") %>
+  </div>
+
+  <div class="imgDoodle9">
+    <%= image_tag ("object9.png") %>
+  </div>
+</div>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".card__portfolio"),{
+  max: 15,
+  speed: 1000,
+  glare: false,
+  "max-glare": 1,
+  });
+</script>

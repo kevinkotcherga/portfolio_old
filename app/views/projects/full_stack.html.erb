@@ -1,26 +1,36 @@
 <div class="container-card__portfolio">
 
-<%= link_to front_end_path do %>
   <div class="card__portfolio">
     <div class="content-card__portfolio">
-      <figure>
+      <a href="../portfolio-projects/project1-auto-text/index.html">
         <%= image_tag ("project1-auto-text.jpg"), class: "img-portfolio" %>
-            <figcaption>Front End</figcaption>
+            <figcaption>Auto text</figcaption>
         </figure>
+      </a>
     </div>
   </div>
-<% end %>
 
-<%= link_to full_stack_path do %>
   <div class="card__portfolio">
     <div class="content-card__portfolio">
+      <a href="../portfolio-projects/project2-popup/index.html">
         <figure>
           <%= image_tag ("project2-popup.jpg"), class: "img-portfolio" %>
-            <figcaption>Full Stack</figcaption>
+            <figcaption>Pop-up</figcaption>
         </figure>
+      </a>
     </div>
   </div>
-<% end %>
+
+  <div class="card__portfolio">
+    <div class="content-card__portfolio">
+      <a class="lien-projet-javascript" href="../portfolio-projects/project3-btnmenu/index.html">
+        <figure>
+          <%= image_tag ("project3-btnmenu.jpg"), class: "img-portfolio" %>
+            <figcaption>Menu latéral</figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
 
 </div>
 
