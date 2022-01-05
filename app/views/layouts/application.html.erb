@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kevin Kotcherga - Développeur Web - Ruby On Rails - Full stack</title>
+    <title>Kevin Kotcherga - Développeur Web - Ruby On Rails - React - Full stack</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= favicon_link_tag %>
   </head>
 
 
@@ -30,7 +31,7 @@
               <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "home" %>"><%= link_to "Accueil", root_path %></li>
               <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "profile" %>"><%= link_to "Profile", profile_path %></li>
               <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "competences" %>"><%= link_to "Compétences", competences_path %></li>
-              <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "portfolio" %>"><%= link_to "Portfolio", portfolio_path %></li>
+              <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "portfolio" || controller.controller_name == "front_ends" && controller.action_name == "front_end" %>"><%= link_to "Portfolio", portfolio_path %></li>
               <li class="<%= "active" if controller.controller_name == "pages" && controller.action_name == "contact" %>"><%= link_to "Contact", contact_path %></li>
             </ul>
           </nav>
