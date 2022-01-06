@@ -11,9 +11,12 @@
     "stimulus": "^3.0.1",
     "turbolinks": "^5.2.0",
     "vanilla-tilt": "^1.7.2"
-  },
+   },
   "version": "0.1.0",
+  "engines": {
+    "node": "14.15.5"
+  },
   "devDependencies": {
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^3.10.3"
   }
 }
