@@ -2,12 +2,16 @@
   position: relative;
   @include glassmorphism;
   width: 1000px;
-  height: 400px;
+  height: 450px;
   margin: 100px;
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
+}
+
+.container-profil__text {
+  text-align: center;
   ul {
     list-style: none;
     padding: 0;
